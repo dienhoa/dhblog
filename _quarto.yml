@@ -1,8 +1,6 @@
 project:
   type: website
-
-execute:
-  freeze: auto
+  output-dir: docs
 
 website:
   title: "dhblog"
