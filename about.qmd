@@ -1,0 +1,23 @@
+---
+title: "About"
+image: profile.jpeg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/DienhoaT
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/dien-hoa-truong-74449aa4/
+    - icon: github
+      text: Github
+      href: https://github.com/dienhoa
+    - text: fastai forum
+      href: https://forums.fast.ai/u/dhoa/summary
+    - text: Kaggle
+      href: https://www.kaggle.com/dienhoa
+
+---
+
+Hello, I'm Dien-Hoa Truong, Data Scientist, vietnamese currently living in the french riviera. I love programming, and math and am a big fan of fast.ai. Here is where I share all the knowledge I discover along my AI journey
