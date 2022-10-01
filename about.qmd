@@ -21,3 +21,7 @@ about:
 ---
 
 Hello, I'm Dien-Hoa Truong, Data Scientist, vietnamese currently living in the french riviera. I love programming, and math and am a big fan of fast.ai. Here is where I share all the knowledge I discover along my AI journey
+
+Some achievements:
+- fast.ai [regular member](https://forums.fast.ai/u/dhoa/summary)
+- winner of [community Kaggle competition](https://www.kaggle.com/competitions/kaggle-pog-series-s01e02)
