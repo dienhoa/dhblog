@@ -212,6 +212,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <p>Preparing the Dynamic size DataLoader for sequences with wide distributed length</p>
 <p>When you work with sequence data (sensors, music, …), you might encounter a case when the sequence length distribution is very large. For example, a song can last 30s to many minutes. Resampling to fixed size can lose details information. In this blog post, I will talk about how to create a dynamic size <code>DataLoader</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://visualstudiomagazine.com/-/media/ECG/visualstudiomagazine/Images/introimages/120731VSMCarrUpdateDelivery.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">DataLoader</figcaption><p></p>
+</figure>
+</div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fastai.vision.<span class="bu">all</span> <span class="im">import</span> <span class="op">*</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils.data <span class="im">import</span> Dataset, DataLoader</span>
