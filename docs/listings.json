@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/tst_from_scratch.html",
       "/posts/ts_dataloaders.html",
       "/posts/Learner.html",
       "/posts/captcha.html",
