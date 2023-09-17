@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,9 +19,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -48,43 +49,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -120,7 +91,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
@@ -142,31 +114,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <span class="navbar-title">dhblog</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/DienhoaT"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/DienhoaT" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/dien-hoa-truong-74449aa4/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/dien-hoa-truong-74449aa4/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/dienhoa"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/dienhoa" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -199,6 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <p class="date">September 30, 2022</p>
       </div>
     </div>
+    
       
     </div>
     
@@ -217,7 +193,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.drupal.org/files/styles/grid-3-2x/public/images/image_captcha_example.png?itok=nD8iHtGl" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Captcha</figcaption><p></p>
+<figcaption class="figure-caption">Captcha</figcaption>
 </figure>
 </div>
 <p>Do you want a little bit more challenge than a traditional Image Classification? Let’s see if we can classify a sequence of classes rather than a single one ;).</p>
@@ -253,12 +229,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>(#1040) [Path('/home/ubuntu/.fastai/data/captcha_images_v2/by5y3.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/efb3f.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/76y6f.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/e2d66.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/c6we6.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/p2m6n.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/d66cn.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/2yggg.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/cffp4.png'),Path('/home/ubuntu/.fastai/data/captcha_images_v2/5npdn.png')...]</code></pre>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -396,8 +372,8 @@ Note
 <p>A simple image classification model is used here with the output dimension: <code>Number_of_vocab x Number_of_classes</code>. Then, while calculating the loss function, we reshape the dimension and calculating the Cross-Entropy loss for each class (The fastai <a href="https://docs.fast.ai/losses.html#crossentropylossflat">CrossEntropyLossFlat</a> can help you to specify which axis that you want to calculate the Cross-Entropy loss on)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="captcha_files/figure-html/image-2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">simple tweak on output</figcaption><p></p>
+<p><img src="captcha_files/figure-html/83214ead-1-image-2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">simple tweak on output</figcaption>
 </figure>
 </div>
 <div class="cell">
@@ -454,500 +430,499 @@ Note
 </style>
 </div>
 <div class="cell-output cell-output-display">
-
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>char_accu</th>
-      <th>captcha_accu</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>4.417060</td>
-      <td>3.768889</td>
-      <td>0.065385</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>4.238056</td>
-      <td>5.701259</td>
-      <td>0.055769</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>3.933014</td>
-      <td>3.674879</td>
-      <td>0.088462</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>3.719078</td>
-      <td>5.090882</td>
-      <td>0.075000</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>3.548473</td>
-      <td>3.824108</td>
-      <td>0.132692</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>3.366105</td>
-      <td>3.826407</td>
-      <td>0.113462</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>3.136746</td>
-      <td>3.577558</td>
-      <td>0.115385</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>2.936203</td>
-      <td>3.092070</td>
-      <td>0.194231</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>2.729806</td>
-      <td>3.936151</td>
-      <td>0.196154</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>2.521348</td>
-      <td>4.372227</td>
-      <td>0.161538</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>2.263230</td>
-      <td>3.843181</td>
-      <td>0.184615</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>2.063784</td>
-      <td>6.484088</td>
-      <td>0.094231</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>1.915519</td>
-      <td>5.548406</td>
-      <td>0.196154</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>1.772406</td>
-      <td>2.161972</td>
-      <td>0.426923</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>1.659181</td>
-      <td>2.289798</td>
-      <td>0.411538</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>1.480252</td>
-      <td>6.103688</td>
-      <td>0.165385</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>1.440136</td>
-      <td>1.914036</td>
-      <td>0.509615</td>
-      <td>0.009615</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>1.336665</td>
-      <td>3.500629</td>
-      <td>0.332692</td>
-      <td>0.009615</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>1.275441</td>
-      <td>1.713563</td>
-      <td>0.590385</td>
-      <td>0.076923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>1.219574</td>
-      <td>1.325677</td>
-      <td>0.738462</td>
-      <td>0.240385</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>1.165449</td>
-      <td>1.249834</td>
-      <td>0.771154</td>
-      <td>0.298077</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>1.132226</td>
-      <td>1.372405</td>
-      <td>0.711538</td>
-      <td>0.163462</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>1.072073</td>
-      <td>1.138467</td>
-      <td>0.823077</td>
-      <td>0.403846</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>1.045686</td>
-      <td>1.143437</td>
-      <td>0.832692</td>
-      <td>0.432692</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>1.027944</td>
-      <td>1.020135</td>
-      <td>0.890385</td>
-      <td>0.605769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>0.980347</td>
-      <td>0.953016</td>
-      <td>0.905769</td>
-      <td>0.673077</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>0.955928</td>
-      <td>0.885346</td>
-      <td>0.938461</td>
-      <td>0.769231</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>0.938319</td>
-      <td>0.880523</td>
-      <td>0.940385</td>
-      <td>0.778846</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>0.912880</td>
-      <td>0.909565</td>
-      <td>0.926923</td>
-      <td>0.692308</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>0.888791</td>
-      <td>0.846983</td>
-      <td>0.957692</td>
-      <td>0.836538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>30</td>
-      <td>0.877755</td>
-      <td>0.829840</td>
-      <td>0.959615</td>
-      <td>0.855769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>31</td>
-      <td>0.854199</td>
-      <td>0.870150</td>
-      <td>0.946154</td>
-      <td>0.788462</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>32</td>
-      <td>0.838330</td>
-      <td>0.819317</td>
-      <td>0.959615</td>
-      <td>0.855769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>33</td>
-      <td>0.824045</td>
-      <td>0.791964</td>
-      <td>0.978846</td>
-      <td>0.951923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>34</td>
-      <td>0.821468</td>
-      <td>0.794070</td>
-      <td>0.969231</td>
-      <td>0.894231</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>35</td>
-      <td>0.803675</td>
-      <td>0.774516</td>
-      <td>0.969231</td>
-      <td>0.913462</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>36</td>
-      <td>0.800759</td>
-      <td>0.771277</td>
-      <td>0.975000</td>
-      <td>0.932692</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>37</td>
-      <td>0.784726</td>
-      <td>0.774723</td>
-      <td>0.971154</td>
-      <td>0.913462</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>38</td>
-      <td>0.776317</td>
-      <td>0.733620</td>
-      <td>0.986538</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>39</td>
-      <td>0.767470</td>
-      <td>0.736605</td>
-      <td>0.982692</td>
-      <td>0.951923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>40</td>
-      <td>0.757092</td>
-      <td>0.729704</td>
-      <td>0.978846</td>
-      <td>0.942308</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>41</td>
-      <td>0.755353</td>
-      <td>0.721849</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>42</td>
-      <td>0.754742</td>
-      <td>0.728808</td>
-      <td>0.978846</td>
-      <td>0.951923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>43</td>
-      <td>0.748297</td>
-      <td>0.719470</td>
-      <td>0.982692</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>44</td>
-      <td>0.742404</td>
-      <td>0.716713</td>
-      <td>0.986538</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>45</td>
-      <td>0.735511</td>
-      <td>0.707033</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>46</td>
-      <td>0.735871</td>
-      <td>0.699644</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>47</td>
-      <td>0.728447</td>
-      <td>0.696534</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>48</td>
-      <td>0.723877</td>
-      <td>0.706259</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>49</td>
-      <td>0.728841</td>
-      <td>0.698290</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>50</td>
-      <td>0.721174</td>
-      <td>0.697634</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>51</td>
-      <td>0.720327</td>
-      <td>0.697556</td>
-      <td>0.986538</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>52</td>
-      <td>0.714673</td>
-      <td>0.690376</td>
-      <td>0.988462</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>53</td>
-      <td>0.717317</td>
-      <td>0.693437</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>54</td>
-      <td>0.714745</td>
-      <td>0.691280</td>
-      <td>0.986538</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>55</td>
-      <td>0.715825</td>
-      <td>0.685640</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>56</td>
-      <td>0.711018</td>
-      <td>0.691839</td>
-      <td>0.986538</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>57</td>
-      <td>0.713582</td>
-      <td>0.688716</td>
-      <td>0.986538</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>58</td>
-      <td>0.713092</td>
-      <td>0.687872</td>
-      <td>0.986538</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>59</td>
-      <td>0.711346</td>
-      <td>0.691615</td>
-      <td>0.988462</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-  </tbody>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">epoch</th>
+<th data-quarto-table-cell-role="th">train_loss</th>
+<th data-quarto-table-cell-role="th">valid_loss</th>
+<th data-quarto-table-cell-role="th">char_accu</th>
+<th data-quarto-table-cell-role="th">captcha_accu</th>
+<th data-quarto-table-cell-role="th">time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>4.417060</td>
+<td>3.768889</td>
+<td>0.065385</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>4.238056</td>
+<td>5.701259</td>
+<td>0.055769</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>3.933014</td>
+<td>3.674879</td>
+<td>0.088462</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>3.719078</td>
+<td>5.090882</td>
+<td>0.075000</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>3.548473</td>
+<td>3.824108</td>
+<td>0.132692</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>3.366105</td>
+<td>3.826407</td>
+<td>0.113462</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>3.136746</td>
+<td>3.577558</td>
+<td>0.115385</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>2.936203</td>
+<td>3.092070</td>
+<td>0.194231</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>2.729806</td>
+<td>3.936151</td>
+<td>0.196154</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>2.521348</td>
+<td>4.372227</td>
+<td>0.161538</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>2.263230</td>
+<td>3.843181</td>
+<td>0.184615</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>2.063784</td>
+<td>6.484088</td>
+<td>0.094231</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>1.915519</td>
+<td>5.548406</td>
+<td>0.196154</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>1.772406</td>
+<td>2.161972</td>
+<td>0.426923</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td>1.659181</td>
+<td>2.289798</td>
+<td>0.411538</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>1.480252</td>
+<td>6.103688</td>
+<td>0.165385</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>1.440136</td>
+<td>1.914036</td>
+<td>0.509615</td>
+<td>0.009615</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>17</td>
+<td>1.336665</td>
+<td>3.500629</td>
+<td>0.332692</td>
+<td>0.009615</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>18</td>
+<td>1.275441</td>
+<td>1.713563</td>
+<td>0.590385</td>
+<td>0.076923</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>1.219574</td>
+<td>1.325677</td>
+<td>0.738462</td>
+<td>0.240385</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>1.165449</td>
+<td>1.249834</td>
+<td>0.771154</td>
+<td>0.298077</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>21</td>
+<td>1.132226</td>
+<td>1.372405</td>
+<td>0.711538</td>
+<td>0.163462</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>22</td>
+<td>1.072073</td>
+<td>1.138467</td>
+<td>0.823077</td>
+<td>0.403846</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>23</td>
+<td>1.045686</td>
+<td>1.143437</td>
+<td>0.832692</td>
+<td>0.432692</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>24</td>
+<td>1.027944</td>
+<td>1.020135</td>
+<td>0.890385</td>
+<td>0.605769</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>0.980347</td>
+<td>0.953016</td>
+<td>0.905769</td>
+<td>0.673077</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>26</td>
+<td>0.955928</td>
+<td>0.885346</td>
+<td>0.938461</td>
+<td>0.769231</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>27</td>
+<td>0.938319</td>
+<td>0.880523</td>
+<td>0.940385</td>
+<td>0.778846</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>28</td>
+<td>0.912880</td>
+<td>0.909565</td>
+<td>0.926923</td>
+<td>0.692308</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>29</td>
+<td>0.888791</td>
+<td>0.846983</td>
+<td>0.957692</td>
+<td>0.836538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>30</td>
+<td>0.877755</td>
+<td>0.829840</td>
+<td>0.959615</td>
+<td>0.855769</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>31</td>
+<td>0.854199</td>
+<td>0.870150</td>
+<td>0.946154</td>
+<td>0.788462</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>32</td>
+<td>0.838330</td>
+<td>0.819317</td>
+<td>0.959615</td>
+<td>0.855769</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>33</td>
+<td>0.824045</td>
+<td>0.791964</td>
+<td>0.978846</td>
+<td>0.951923</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>34</td>
+<td>0.821468</td>
+<td>0.794070</td>
+<td>0.969231</td>
+<td>0.894231</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>0.803675</td>
+<td>0.774516</td>
+<td>0.969231</td>
+<td>0.913462</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>36</td>
+<td>0.800759</td>
+<td>0.771277</td>
+<td>0.975000</td>
+<td>0.932692</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>37</td>
+<td>0.784726</td>
+<td>0.774723</td>
+<td>0.971154</td>
+<td>0.913462</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>38</td>
+<td>0.776317</td>
+<td>0.733620</td>
+<td>0.986538</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>39</td>
+<td>0.767470</td>
+<td>0.736605</td>
+<td>0.982692</td>
+<td>0.951923</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>0.757092</td>
+<td>0.729704</td>
+<td>0.978846</td>
+<td>0.942308</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>41</td>
+<td>0.755353</td>
+<td>0.721849</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td>0.754742</td>
+<td>0.728808</td>
+<td>0.978846</td>
+<td>0.951923</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>43</td>
+<td>0.748297</td>
+<td>0.719470</td>
+<td>0.982692</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>44</td>
+<td>0.742404</td>
+<td>0.716713</td>
+<td>0.986538</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td>0.735511</td>
+<td>0.707033</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>46</td>
+<td>0.735871</td>
+<td>0.699644</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>47</td>
+<td>0.728447</td>
+<td>0.696534</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>48</td>
+<td>0.723877</td>
+<td>0.706259</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>49</td>
+<td>0.728841</td>
+<td>0.698290</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>0.721174</td>
+<td>0.697634</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>51</td>
+<td>0.720327</td>
+<td>0.697556</td>
+<td>0.986538</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>52</td>
+<td>0.714673</td>
+<td>0.690376</td>
+<td>0.988462</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>53</td>
+<td>0.717317</td>
+<td>0.693437</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>54</td>
+<td>0.714745</td>
+<td>0.691280</td>
+<td>0.986538</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>55</td>
+<td>0.715825</td>
+<td>0.685640</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>56</td>
+<td>0.711018</td>
+<td>0.691839</td>
+<td>0.986538</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>57</td>
+<td>0.713582</td>
+<td>0.688716</td>
+<td>0.986538</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>58</td>
+<td>0.713092</td>
+<td>0.687872</td>
+<td>0.986538</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>59</td>
+<td>0.711346</td>
+<td>0.691615</td>
+<td>0.988462</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
@@ -964,16 +939,16 @@ Note
 <p>In the model used above, between the <code>body</code> and <code>head</code>, there is an <code>AdaptiveAvgPool2d</code> layer, which blurs all essential spatial information. So let’s remove it and create our own <code>head</code></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="captcha_files/figure-html/image-3.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Receptive field with and without Adaptive Average Pooling</figcaption><p></p>
+<p><img src="captcha_files/figure-html/4b0fc53b-1-image-3.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Receptive field with and without Adaptive Average Pooling</figcaption>
 </figure>
 </div>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Intuition
 </div>
 </div>
@@ -1030,500 +1005,499 @@ Intuition
 </style>
 </div>
 <div class="cell-output cell-output-display">
-
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>char_accu</th>
-      <th>captcha_accu</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>3.056647</td>
-      <td>2.770755</td>
-      <td>0.221154</td>
-      <td>0.000000</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>2.707805</td>
-      <td>2.455260</td>
-      <td>0.351923</td>
-      <td>0.019231</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>2.307795</td>
-      <td>2.130244</td>
-      <td>0.434615</td>
-      <td>0.048077</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>1.944143</td>
-      <td>1.862135</td>
-      <td>0.544231</td>
-      <td>0.067308</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>1.663925</td>
-      <td>1.757791</td>
-      <td>0.603846</td>
-      <td>0.076923</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>1.499317</td>
-      <td>1.516997</td>
-      <td>0.653846</td>
-      <td>0.153846</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>1.436849</td>
-      <td>1.711082</td>
-      <td>0.590385</td>
-      <td>0.048077</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>1.486420</td>
-      <td>1.472152</td>
-      <td>0.676923</td>
-      <td>0.153846</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>1.389985</td>
-      <td>1.436426</td>
-      <td>0.725000</td>
-      <td>0.192308</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>1.344463</td>
-      <td>1.969319</td>
-      <td>0.588462</td>
-      <td>0.067308</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>1.500018</td>
-      <td>1.610145</td>
-      <td>0.661538</td>
-      <td>0.105769</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>1.370128</td>
-      <td>1.287863</td>
-      <td>0.821154</td>
-      <td>0.451923</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>1.320343</td>
-      <td>1.476295</td>
-      <td>0.742308</td>
-      <td>0.240385</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>1.276946</td>
-      <td>3.231544</td>
-      <td>0.340385</td>
-      <td>0.000000</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>1.580945</td>
-      <td>1.563601</td>
-      <td>0.763462</td>
-      <td>0.307692</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>1.444904</td>
-      <td>1.174396</td>
-      <td>0.834615</td>
-      <td>0.432692</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>1.276948</td>
-      <td>1.223626</td>
-      <td>0.817308</td>
-      <td>0.403846</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>1.145310</td>
-      <td>1.043204</td>
-      <td>0.901923</td>
-      <td>0.653846</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>1.079106</td>
-      <td>1.131395</td>
-      <td>0.909615</td>
-      <td>0.701923</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>1.054410</td>
-      <td>1.013260</td>
-      <td>0.901923</td>
-      <td>0.634615</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>1.059869</td>
-      <td>1.099213</td>
-      <td>0.892308</td>
-      <td>0.634615</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>1.031296</td>
-      <td>0.993608</td>
-      <td>0.905769</td>
-      <td>0.663462</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>0.994466</td>
-      <td>0.873521</td>
-      <td>0.944231</td>
-      <td>0.788462</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>1.009694</td>
-      <td>0.865026</td>
-      <td>0.948077</td>
-      <td>0.817308</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>0.932827</td>
-      <td>1.105105</td>
-      <td>0.951923</td>
-      <td>0.875000</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>0.887062</td>
-      <td>0.852510</td>
-      <td>0.950000</td>
-      <td>0.836538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>0.884278</td>
-      <td>0.817573</td>
-      <td>0.959615</td>
-      <td>0.875000</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>0.862702</td>
-      <td>0.815369</td>
-      <td>0.963462</td>
-      <td>0.865385</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>0.853542</td>
-      <td>0.814780</td>
-      <td>0.969231</td>
-      <td>0.903846</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>0.852293</td>
-      <td>0.793552</td>
-      <td>0.971154</td>
-      <td>0.903846</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>30</td>
-      <td>0.832754</td>
-      <td>1.187254</td>
-      <td>0.892308</td>
-      <td>0.605769</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>31</td>
-      <td>0.824426</td>
-      <td>0.905626</td>
-      <td>0.971154</td>
-      <td>0.923077</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>32</td>
-      <td>0.802780</td>
-      <td>0.747221</td>
-      <td>0.973077</td>
-      <td>0.913462</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>33</td>
-      <td>0.807151</td>
-      <td>1.262912</td>
-      <td>0.957692</td>
-      <td>0.913462</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>34</td>
-      <td>0.788464</td>
-      <td>0.744047</td>
-      <td>0.980769</td>
-      <td>0.942308</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>35</td>
-      <td>0.772782</td>
-      <td>0.724258</td>
-      <td>0.982692</td>
-      <td>0.932692</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>36</td>
-      <td>0.764042</td>
-      <td>0.716053</td>
-      <td>0.980769</td>
-      <td>0.951923</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>37</td>
-      <td>0.755922</td>
-      <td>0.726421</td>
-      <td>0.980769</td>
-      <td>0.942308</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>38</td>
-      <td>0.755969</td>
-      <td>0.716299</td>
-      <td>0.984615</td>
-      <td>0.951923</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>39</td>
-      <td>0.742237</td>
-      <td>0.709827</td>
-      <td>0.988461</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>40</td>
-      <td>0.741012</td>
-      <td>0.700651</td>
-      <td>0.986538</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>41</td>
-      <td>0.739579</td>
-      <td>0.746366</td>
-      <td>0.975000</td>
-      <td>0.923077</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>42</td>
-      <td>0.734317</td>
-      <td>0.740812</td>
-      <td>0.978846</td>
-      <td>0.942308</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>43</td>
-      <td>0.728524</td>
-      <td>0.689804</td>
-      <td>0.984615</td>
-      <td>0.951923</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>44</td>
-      <td>0.721895</td>
-      <td>0.686216</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>45</td>
-      <td>0.718292</td>
-      <td>0.680776</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>46</td>
-      <td>0.711961</td>
-      <td>0.675663</td>
-      <td>0.988462</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>47</td>
-      <td>0.711802</td>
-      <td>0.678798</td>
-      <td>0.988461</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>48</td>
-      <td>0.712833</td>
-      <td>0.678948</td>
-      <td>0.986538</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>49</td>
-      <td>0.711009</td>
-      <td>0.678042</td>
-      <td>0.984615</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>50</td>
-      <td>0.705792</td>
-      <td>0.671570</td>
-      <td>0.986538</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>51</td>
-      <td>0.703747</td>
-      <td>0.669645</td>
-      <td>0.986538</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>52</td>
-      <td>0.700930</td>
-      <td>0.668842</td>
-      <td>0.988462</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>53</td>
-      <td>0.700268</td>
-      <td>0.667778</td>
-      <td>0.988461</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>54</td>
-      <td>0.698437</td>
-      <td>0.673563</td>
-      <td>0.988461</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>55</td>
-      <td>0.702755</td>
-      <td>0.665972</td>
-      <td>0.988462</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>56</td>
-      <td>0.699661</td>
-      <td>0.668209</td>
-      <td>0.988461</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>57</td>
-      <td>0.695964</td>
-      <td>0.666184</td>
-      <td>0.988461</td>
-      <td>0.971154</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>58</td>
-      <td>0.697385</td>
-      <td>0.665079</td>
-      <td>0.992308</td>
-      <td>0.980769</td>
-      <td>00:06</td>
-    </tr>
-    <tr>
-      <td>59</td>
-      <td>0.702616</td>
-      <td>0.668129</td>
-      <td>0.988462</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-  </tbody>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">epoch</th>
+<th data-quarto-table-cell-role="th">train_loss</th>
+<th data-quarto-table-cell-role="th">valid_loss</th>
+<th data-quarto-table-cell-role="th">char_accu</th>
+<th data-quarto-table-cell-role="th">captcha_accu</th>
+<th data-quarto-table-cell-role="th">time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>3.056647</td>
+<td>2.770755</td>
+<td>0.221154</td>
+<td>0.000000</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>2.707805</td>
+<td>2.455260</td>
+<td>0.351923</td>
+<td>0.019231</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>2.307795</td>
+<td>2.130244</td>
+<td>0.434615</td>
+<td>0.048077</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>1.944143</td>
+<td>1.862135</td>
+<td>0.544231</td>
+<td>0.067308</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>1.663925</td>
+<td>1.757791</td>
+<td>0.603846</td>
+<td>0.076923</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>1.499317</td>
+<td>1.516997</td>
+<td>0.653846</td>
+<td>0.153846</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>1.436849</td>
+<td>1.711082</td>
+<td>0.590385</td>
+<td>0.048077</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>1.486420</td>
+<td>1.472152</td>
+<td>0.676923</td>
+<td>0.153846</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>1.389985</td>
+<td>1.436426</td>
+<td>0.725000</td>
+<td>0.192308</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>1.344463</td>
+<td>1.969319</td>
+<td>0.588462</td>
+<td>0.067308</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>1.500018</td>
+<td>1.610145</td>
+<td>0.661538</td>
+<td>0.105769</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>1.370128</td>
+<td>1.287863</td>
+<td>0.821154</td>
+<td>0.451923</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>1.320343</td>
+<td>1.476295</td>
+<td>0.742308</td>
+<td>0.240385</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>1.276946</td>
+<td>3.231544</td>
+<td>0.340385</td>
+<td>0.000000</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td>1.580945</td>
+<td>1.563601</td>
+<td>0.763462</td>
+<td>0.307692</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>1.444904</td>
+<td>1.174396</td>
+<td>0.834615</td>
+<td>0.432692</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>1.276948</td>
+<td>1.223626</td>
+<td>0.817308</td>
+<td>0.403846</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>17</td>
+<td>1.145310</td>
+<td>1.043204</td>
+<td>0.901923</td>
+<td>0.653846</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>18</td>
+<td>1.079106</td>
+<td>1.131395</td>
+<td>0.909615</td>
+<td>0.701923</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>1.054410</td>
+<td>1.013260</td>
+<td>0.901923</td>
+<td>0.634615</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>1.059869</td>
+<td>1.099213</td>
+<td>0.892308</td>
+<td>0.634615</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>21</td>
+<td>1.031296</td>
+<td>0.993608</td>
+<td>0.905769</td>
+<td>0.663462</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>22</td>
+<td>0.994466</td>
+<td>0.873521</td>
+<td>0.944231</td>
+<td>0.788462</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>23</td>
+<td>1.009694</td>
+<td>0.865026</td>
+<td>0.948077</td>
+<td>0.817308</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>24</td>
+<td>0.932827</td>
+<td>1.105105</td>
+<td>0.951923</td>
+<td>0.875000</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>0.887062</td>
+<td>0.852510</td>
+<td>0.950000</td>
+<td>0.836538</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>26</td>
+<td>0.884278</td>
+<td>0.817573</td>
+<td>0.959615</td>
+<td>0.875000</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>27</td>
+<td>0.862702</td>
+<td>0.815369</td>
+<td>0.963462</td>
+<td>0.865385</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>28</td>
+<td>0.853542</td>
+<td>0.814780</td>
+<td>0.969231</td>
+<td>0.903846</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>29</td>
+<td>0.852293</td>
+<td>0.793552</td>
+<td>0.971154</td>
+<td>0.903846</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>30</td>
+<td>0.832754</td>
+<td>1.187254</td>
+<td>0.892308</td>
+<td>0.605769</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>31</td>
+<td>0.824426</td>
+<td>0.905626</td>
+<td>0.971154</td>
+<td>0.923077</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>32</td>
+<td>0.802780</td>
+<td>0.747221</td>
+<td>0.973077</td>
+<td>0.913462</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>33</td>
+<td>0.807151</td>
+<td>1.262912</td>
+<td>0.957692</td>
+<td>0.913462</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>34</td>
+<td>0.788464</td>
+<td>0.744047</td>
+<td>0.980769</td>
+<td>0.942308</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>0.772782</td>
+<td>0.724258</td>
+<td>0.982692</td>
+<td>0.932692</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>36</td>
+<td>0.764042</td>
+<td>0.716053</td>
+<td>0.980769</td>
+<td>0.951923</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>37</td>
+<td>0.755922</td>
+<td>0.726421</td>
+<td>0.980769</td>
+<td>0.942308</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>38</td>
+<td>0.755969</td>
+<td>0.716299</td>
+<td>0.984615</td>
+<td>0.951923</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>39</td>
+<td>0.742237</td>
+<td>0.709827</td>
+<td>0.988461</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>0.741012</td>
+<td>0.700651</td>
+<td>0.986538</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>41</td>
+<td>0.739579</td>
+<td>0.746366</td>
+<td>0.975000</td>
+<td>0.923077</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td>0.734317</td>
+<td>0.740812</td>
+<td>0.978846</td>
+<td>0.942308</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>43</td>
+<td>0.728524</td>
+<td>0.689804</td>
+<td>0.984615</td>
+<td>0.951923</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>44</td>
+<td>0.721895</td>
+<td>0.686216</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td>0.718292</td>
+<td>0.680776</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>46</td>
+<td>0.711961</td>
+<td>0.675663</td>
+<td>0.988462</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>47</td>
+<td>0.711802</td>
+<td>0.678798</td>
+<td>0.988461</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>48</td>
+<td>0.712833</td>
+<td>0.678948</td>
+<td>0.986538</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>49</td>
+<td>0.711009</td>
+<td>0.678042</td>
+<td>0.984615</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>0.705792</td>
+<td>0.671570</td>
+<td>0.986538</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>51</td>
+<td>0.703747</td>
+<td>0.669645</td>
+<td>0.986538</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>52</td>
+<td>0.700930</td>
+<td>0.668842</td>
+<td>0.988462</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>53</td>
+<td>0.700268</td>
+<td>0.667778</td>
+<td>0.988461</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>54</td>
+<td>0.698437</td>
+<td>0.673563</td>
+<td>0.988461</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>55</td>
+<td>0.702755</td>
+<td>0.665972</td>
+<td>0.988462</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>56</td>
+<td>0.699661</td>
+<td>0.668209</td>
+<td>0.988461</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>57</td>
+<td>0.695964</td>
+<td>0.666184</td>
+<td>0.988461</td>
+<td>0.971154</td>
+<td>00:06</td>
+</tr>
+<tr class="odd">
+<td>58</td>
+<td>0.697385</td>
+<td>0.665079</td>
+<td>0.992308</td>
+<td>0.980769</td>
+<td>00:06</td>
+</tr>
+<tr class="even">
+<td>59</td>
+<td>0.702616</td>
+<td>0.668129</td>
+<td>0.988462</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
@@ -1541,16 +1515,16 @@ Intuition
 <p>Yes, yes, It is the CRNN.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="captcha_files/figure-html/image.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">CRNN Model</figcaption><p></p>
+<p><img src="captcha_files/figure-html/59414fee-1-image.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">CRNN Model</figcaption>
 </figure>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1558,12 +1532,12 @@ Note
 <p>Feel free to run the model step by step through each layer to understand better the dimension</p>
 </div>
 </div>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -1632,7 +1606,7 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://sid2697.github.io/Blog_Sid/assets/images/CTC_2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">CTC Loss Illustration</figcaption><p></p>
+<figcaption class="figure-caption">CTC Loss Illustration</figcaption>
 </figure>
 </div>
 <div class="cell">
@@ -1766,26 +1740,25 @@ Note
 </style>
 </div>
 <div class="cell-output cell-output-display">
-
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>captcha_accu_ctc</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>0.001245</td>
-      <td>0.070678</td>
-      <td>0.961538</td>
-      <td>00:06</td>
-    </tr>
-  </tbody>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">epoch</th>
+<th data-quarto-table-cell-role="th">train_loss</th>
+<th data-quarto-table-cell-role="th">valid_loss</th>
+<th data-quarto-table-cell-role="th">captcha_accu_ctc</th>
+<th data-quarto-table-cell-role="th">time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0.001245</td>
+<td>0.070678</td>
+<td>0.961538</td>
+<td>00:06</td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
@@ -1840,439 +1813,438 @@ Note
 </style>
 </div>
 <div class="cell-output cell-output-display">
-
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>captcha_accu_ctc</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>3.364362</td>
-      <td>3.221772</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>3.239760</td>
-      <td>3.222240</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>3.198520</td>
-      <td>3.179216</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>3.068399</td>
-      <td>3.082180</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>2.935494</td>
-      <td>2.940528</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>2.778541</td>
-      <td>2.834429</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>2.595863</td>
-      <td>2.414017</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>2.398474</td>
-      <td>2.306193</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>2.133149</td>
-      <td>2.030112</td>
-      <td>0.009615</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>1.933357</td>
-      <td>2.035026</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>1.740602</td>
-      <td>3.510546</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>1.571230</td>
-      <td>1.606472</td>
-      <td>0.000000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>1.481388</td>
-      <td>1.380839</td>
-      <td>0.028846</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>1.363306</td>
-      <td>1.311289</td>
-      <td>0.028846</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>1.196686</td>
-      <td>1.012929</td>
-      <td>0.125000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>0.932915</td>
-      <td>0.713615</td>
-      <td>0.192308</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>0.730192</td>
-      <td>0.596288</td>
-      <td>0.278846</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>0.589729</td>
-      <td>0.484889</td>
-      <td>0.442308</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>0.393728</td>
-      <td>0.315344</td>
-      <td>0.567308</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>0.335306</td>
-      <td>0.282954</td>
-      <td>0.663462</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>0.253060</td>
-      <td>0.164563</td>
-      <td>0.826923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>0.192399</td>
-      <td>0.202485</td>
-      <td>0.778846</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>0.152099</td>
-      <td>0.170849</td>
-      <td>0.788462</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>0.165517</td>
-      <td>0.182350</td>
-      <td>0.769231</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>0.143058</td>
-      <td>0.116091</td>
-      <td>0.875000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>0.140082</td>
-      <td>0.098341</td>
-      <td>0.884615</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>0.107128</td>
-      <td>0.153724</td>
-      <td>0.846154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>0.104198</td>
-      <td>0.064582</td>
-      <td>0.903846</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>0.075773</td>
-      <td>0.164378</td>
-      <td>0.826923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>0.073986</td>
-      <td>0.095392</td>
-      <td>0.942308</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>30</td>
-      <td>0.121426</td>
-      <td>0.098069</td>
-      <td>0.875000</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>31</td>
-      <td>0.061526</td>
-      <td>0.085097</td>
-      <td>0.913462</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>32</td>
-      <td>0.050841</td>
-      <td>0.033660</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>33</td>
-      <td>0.041742</td>
-      <td>0.113056</td>
-      <td>0.884615</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>34</td>
-      <td>0.037825</td>
-      <td>0.035997</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>35</td>
-      <td>0.042165</td>
-      <td>0.057766</td>
-      <td>0.923077</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>36</td>
-      <td>0.040758</td>
-      <td>0.056158</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>37</td>
-      <td>0.013569</td>
-      <td>0.063323</td>
-      <td>0.951923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>38</td>
-      <td>0.017145</td>
-      <td>0.041725</td>
-      <td>0.951923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>39</td>
-      <td>0.016637</td>
-      <td>0.050826</td>
-      <td>0.951923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>40</td>
-      <td>0.015019</td>
-      <td>0.039701</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>41</td>
-      <td>0.007477</td>
-      <td>0.036252</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>42</td>
-      <td>0.017243</td>
-      <td>0.036068</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>43</td>
-      <td>0.011176</td>
-      <td>0.045191</td>
-      <td>0.951923</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>44</td>
-      <td>0.010634</td>
-      <td>0.045656</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>45</td>
-      <td>0.005593</td>
-      <td>0.048920</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>46</td>
-      <td>0.002363</td>
-      <td>0.049634</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>47</td>
-      <td>0.005349</td>
-      <td>0.049498</td>
-      <td>0.961538</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>48</td>
-      <td>0.012180</td>
-      <td>0.036904</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>49</td>
-      <td>0.001877</td>
-      <td>0.035886</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>50</td>
-      <td>0.002923</td>
-      <td>0.043079</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>51</td>
-      <td>0.002380</td>
-      <td>0.034152</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>52</td>
-      <td>0.002510</td>
-      <td>0.038204</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>53</td>
-      <td>0.001762</td>
-      <td>0.034696</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>54</td>
-      <td>0.002121</td>
-      <td>0.037318</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>55</td>
-      <td>0.000552</td>
-      <td>0.043198</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>56</td>
-      <td>0.000387</td>
-      <td>0.041396</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>57</td>
-      <td>0.001379</td>
-      <td>0.037345</td>
-      <td>0.980769</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>58</td>
-      <td>0.002729</td>
-      <td>0.040222</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-    <tr>
-      <td>59</td>
-      <td>0.000564</td>
-      <td>0.051966</td>
-      <td>0.971154</td>
-      <td>00:05</td>
-    </tr>
-  </tbody>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">epoch</th>
+<th data-quarto-table-cell-role="th">train_loss</th>
+<th data-quarto-table-cell-role="th">valid_loss</th>
+<th data-quarto-table-cell-role="th">captcha_accu_ctc</th>
+<th data-quarto-table-cell-role="th">time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>3.364362</td>
+<td>3.221772</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>3.239760</td>
+<td>3.222240</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>3.198520</td>
+<td>3.179216</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>3.068399</td>
+<td>3.082180</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>2.935494</td>
+<td>2.940528</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>2.778541</td>
+<td>2.834429</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>2.595863</td>
+<td>2.414017</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>2.398474</td>
+<td>2.306193</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>2.133149</td>
+<td>2.030112</td>
+<td>0.009615</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>1.933357</td>
+<td>2.035026</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>1.740602</td>
+<td>3.510546</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>1.571230</td>
+<td>1.606472</td>
+<td>0.000000</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>1.481388</td>
+<td>1.380839</td>
+<td>0.028846</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>1.363306</td>
+<td>1.311289</td>
+<td>0.028846</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td>1.196686</td>
+<td>1.012929</td>
+<td>0.125000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>0.932915</td>
+<td>0.713615</td>
+<td>0.192308</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>0.730192</td>
+<td>0.596288</td>
+<td>0.278846</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>17</td>
+<td>0.589729</td>
+<td>0.484889</td>
+<td>0.442308</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>18</td>
+<td>0.393728</td>
+<td>0.315344</td>
+<td>0.567308</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>0.335306</td>
+<td>0.282954</td>
+<td>0.663462</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>0.253060</td>
+<td>0.164563</td>
+<td>0.826923</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>21</td>
+<td>0.192399</td>
+<td>0.202485</td>
+<td>0.778846</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>22</td>
+<td>0.152099</td>
+<td>0.170849</td>
+<td>0.788462</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>23</td>
+<td>0.165517</td>
+<td>0.182350</td>
+<td>0.769231</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>24</td>
+<td>0.143058</td>
+<td>0.116091</td>
+<td>0.875000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>0.140082</td>
+<td>0.098341</td>
+<td>0.884615</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>26</td>
+<td>0.107128</td>
+<td>0.153724</td>
+<td>0.846154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>27</td>
+<td>0.104198</td>
+<td>0.064582</td>
+<td>0.903846</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>28</td>
+<td>0.075773</td>
+<td>0.164378</td>
+<td>0.826923</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>29</td>
+<td>0.073986</td>
+<td>0.095392</td>
+<td>0.942308</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>30</td>
+<td>0.121426</td>
+<td>0.098069</td>
+<td>0.875000</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>31</td>
+<td>0.061526</td>
+<td>0.085097</td>
+<td>0.913462</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>32</td>
+<td>0.050841</td>
+<td>0.033660</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>33</td>
+<td>0.041742</td>
+<td>0.113056</td>
+<td>0.884615</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>34</td>
+<td>0.037825</td>
+<td>0.035997</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>0.042165</td>
+<td>0.057766</td>
+<td>0.923077</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>36</td>
+<td>0.040758</td>
+<td>0.056158</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>37</td>
+<td>0.013569</td>
+<td>0.063323</td>
+<td>0.951923</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>38</td>
+<td>0.017145</td>
+<td>0.041725</td>
+<td>0.951923</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>39</td>
+<td>0.016637</td>
+<td>0.050826</td>
+<td>0.951923</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>0.015019</td>
+<td>0.039701</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>41</td>
+<td>0.007477</td>
+<td>0.036252</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td>0.017243</td>
+<td>0.036068</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>43</td>
+<td>0.011176</td>
+<td>0.045191</td>
+<td>0.951923</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>44</td>
+<td>0.010634</td>
+<td>0.045656</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td>0.005593</td>
+<td>0.048920</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>46</td>
+<td>0.002363</td>
+<td>0.049634</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>47</td>
+<td>0.005349</td>
+<td>0.049498</td>
+<td>0.961538</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>48</td>
+<td>0.012180</td>
+<td>0.036904</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>49</td>
+<td>0.001877</td>
+<td>0.035886</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>0.002923</td>
+<td>0.043079</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>51</td>
+<td>0.002380</td>
+<td>0.034152</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>52</td>
+<td>0.002510</td>
+<td>0.038204</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>53</td>
+<td>0.001762</td>
+<td>0.034696</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>54</td>
+<td>0.002121</td>
+<td>0.037318</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>55</td>
+<td>0.000552</td>
+<td>0.043198</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>56</td>
+<td>0.000387</td>
+<td>0.041396</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>57</td>
+<td>0.001379</td>
+<td>0.037345</td>
+<td>0.980769</td>
+<td>00:05</td>
+</tr>
+<tr class="odd">
+<td>58</td>
+<td>0.002729</td>
+<td>0.040222</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+<tr class="even">
+<td>59</td>
+<td>0.000564</td>
+<td>0.051966</td>
+<td>0.971154</td>
+<td>00:05</td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
@@ -2316,9 +2288,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -2330,7 +2316,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -2366,24 +2369,128 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,9 +19,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -48,43 +49,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -120,7 +91,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
@@ -143,31 +115,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <span class="navbar-title">dhblog</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/DienhoaT"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/DienhoaT" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/dien-hoa-truong-74449aa4/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/dien-hoa-truong-74449aa4/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/dienhoa"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/dienhoa" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -200,6 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <p class="date">July 11, 2023</p>
       </div>
     </div>
+    
       
     </div>
     
@@ -218,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://huggingface.co/Ubenwa/sb-ecapa-vggsound/resolve/main/logo.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">CryCeleb Competition</figcaption><p></p>
+<figcaption class="figure-caption">CryCeleb Competition</figcaption>
 </figure>
 </div>
 <p>This blog post is to document my journey to winning the <a href="https://huggingface.co/spaces/competitions/CryCeleb2023">CryCeleb</a> competition hosted by <a href="https://huggingface.co/">HuggingFace</a> and <a href="https://www.ubenwa.ai/">Ubenwa</a>, which focuses on verifying babies using their cry sound. However, I must admit that:</p>
@@ -333,231 +309,231 @@ Syncing run <strong><a href="https://wandb.ai/dhoa/uncategorized/runs/s4lz49ck" 
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>display(test_pairs.head().style.set_caption(<span class="ss">f"test_pairs"</span>).set_table_styles([{<span class="st">'selector'</span>: <span class="st">'caption'</span>,<span class="st">'props'</span>: [(<span class="st">'font-size'</span>, <span class="st">'20px'</span>)]}]))</span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>display(sample_submission.head().style.set_caption(<span class="ss">f"sample_submission"</span>).set_table_styles([{<span class="st">'selector'</span>: <span class="st">'caption'</span>,<span class="st">'props'</span>: [(<span class="st">'font-size'</span>, <span class="st">'20px'</span>)]}]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-
 <style type="text/css">
 #T_2bda5 caption {
   font-size: 20px;
 }
 </style>
-<table id="T_2bda5">
-  <caption>metadata</caption>
-  <thead>
-    <tr>
-      <th class="blank level0">&nbsp;</th>
-      <th id="T_2bda5_level0_col0" class="col_heading level0 col0">baby_id</th>
-      <th id="T_2bda5_level0_col1" class="col_heading level0 col1">period</th>
-      <th id="T_2bda5_level0_col2" class="col_heading level0 col2">duration</th>
-      <th id="T_2bda5_level0_col3" class="col_heading level0 col3">split</th>
-      <th id="T_2bda5_level0_col4" class="col_heading level0 col4">chronological_index</th>
-      <th id="T_2bda5_level0_col5" class="col_heading level0 col5">file_name</th>
-      <th id="T_2bda5_level0_col6" class="col_heading level0 col6">file_id</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th id="T_2bda5_level0_row0" class="row_heading level0 row0">0</th>
-      <td id="T_2bda5_row0_col0" class="data row0 col0">0694</td>
-      <td id="T_2bda5_row0_col1" class="data row0 col1">B</td>
-      <td id="T_2bda5_row0_col2" class="data row0 col2">1.320000</td>
-      <td id="T_2bda5_row0_col3" class="data row0 col3">dev</td>
-      <td id="T_2bda5_row0_col4" class="data row0 col4">000</td>
-      <td id="T_2bda5_row0_col5" class="data row0 col5">audio/dev/0694/B/0694_B_000.wav</td>
-      <td id="T_2bda5_row0_col6" class="data row0 col6">0694_B_000</td>
-    </tr>
-    <tr>
-      <th id="T_2bda5_level0_row1" class="row_heading level0 row1">1</th>
-      <td id="T_2bda5_row1_col0" class="data row1 col0">0694</td>
-      <td id="T_2bda5_row1_col1" class="data row1 col1">B</td>
-      <td id="T_2bda5_row1_col2" class="data row1 col2">0.940000</td>
-      <td id="T_2bda5_row1_col3" class="data row1 col3">dev</td>
-      <td id="T_2bda5_row1_col4" class="data row1 col4">001</td>
-      <td id="T_2bda5_row1_col5" class="data row1 col5">audio/dev/0694/B/0694_B_001.wav</td>
-      <td id="T_2bda5_row1_col6" class="data row1 col6">0694_B_001</td>
-    </tr>
-    <tr>
-      <th id="T_2bda5_level0_row2" class="row_heading level0 row2">2</th>
-      <td id="T_2bda5_row2_col0" class="data row2 col0">0694</td>
-      <td id="T_2bda5_row2_col1" class="data row2 col1">B</td>
-      <td id="T_2bda5_row2_col2" class="data row2 col2">0.880000</td>
-      <td id="T_2bda5_row2_col3" class="data row2 col3">dev</td>
-      <td id="T_2bda5_row2_col4" class="data row2 col4">002</td>
-      <td id="T_2bda5_row2_col5" class="data row2 col5">audio/dev/0694/B/0694_B_002.wav</td>
-      <td id="T_2bda5_row2_col6" class="data row2 col6">0694_B_002</td>
-    </tr>
-    <tr>
-      <th id="T_2bda5_level0_row3" class="row_heading level0 row3">3</th>
-      <td id="T_2bda5_row3_col0" class="data row3 col0">0694</td>
-      <td id="T_2bda5_row3_col1" class="data row3 col1">B</td>
-      <td id="T_2bda5_row3_col2" class="data row3 col2">1.130000</td>
-      <td id="T_2bda5_row3_col3" class="data row3 col3">dev</td>
-      <td id="T_2bda5_row3_col4" class="data row3 col4">003</td>
-      <td id="T_2bda5_row3_col5" class="data row3 col5">audio/dev/0694/B/0694_B_003.wav</td>
-      <td id="T_2bda5_row3_col6" class="data row3 col6">0694_B_003</td>
-    </tr>
-    <tr>
-      <th id="T_2bda5_level0_row4" class="row_heading level0 row4">4</th>
-      <td id="T_2bda5_row4_col0" class="data row4 col0">0694</td>
-      <td id="T_2bda5_row4_col1" class="data row4 col1">B</td>
-      <td id="T_2bda5_row4_col2" class="data row4 col2">1.180000</td>
-      <td id="T_2bda5_row4_col3" class="data row4 col3">dev</td>
-      <td id="T_2bda5_row4_col4" class="data row4 col4">004</td>
-      <td id="T_2bda5_row4_col5" class="data row4 col5">audio/dev/0694/B/0694_B_004.wav</td>
-      <td id="T_2bda5_row4_col6" class="data row4 col6">0694_B_004</td>
-    </tr>
-  </tbody>
+
+<table id="T_2bda5" data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>metadata</caption>
+<thead>
+<tr class="header">
+<th class="blank level0" data-quarto-table-cell-role="th">&nbsp;</th>
+<th id="T_2bda5_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">baby_id</th>
+<th id="T_2bda5_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">period</th>
+<th id="T_2bda5_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">duration</th>
+<th id="T_2bda5_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">split</th>
+<th id="T_2bda5_level0_col4" class="col_heading level0 col4" data-quarto-table-cell-role="th">chronological_index</th>
+<th id="T_2bda5_level0_col5" class="col_heading level0 col5" data-quarto-table-cell-role="th">file_name</th>
+<th id="T_2bda5_level0_col6" class="col_heading level0 col6" data-quarto-table-cell-role="th">file_id</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_2bda5_level0_row0" class="row_heading level0 row0" data-quarto-table-cell-role="th">0</td>
+<td id="T_2bda5_row0_col0" class="data row0 col0">0694</td>
+<td id="T_2bda5_row0_col1" class="data row0 col1">B</td>
+<td id="T_2bda5_row0_col2" class="data row0 col2">1.320000</td>
+<td id="T_2bda5_row0_col3" class="data row0 col3">dev</td>
+<td id="T_2bda5_row0_col4" class="data row0 col4">000</td>
+<td id="T_2bda5_row0_col5" class="data row0 col5">audio/dev/0694/B/0694_B_000.wav</td>
+<td id="T_2bda5_row0_col6" class="data row0 col6">0694_B_000</td>
+</tr>
+<tr class="even">
+<td id="T_2bda5_level0_row1" class="row_heading level0 row1" data-quarto-table-cell-role="th">1</td>
+<td id="T_2bda5_row1_col0" class="data row1 col0">0694</td>
+<td id="T_2bda5_row1_col1" class="data row1 col1">B</td>
+<td id="T_2bda5_row1_col2" class="data row1 col2">0.940000</td>
+<td id="T_2bda5_row1_col3" class="data row1 col3">dev</td>
+<td id="T_2bda5_row1_col4" class="data row1 col4">001</td>
+<td id="T_2bda5_row1_col5" class="data row1 col5">audio/dev/0694/B/0694_B_001.wav</td>
+<td id="T_2bda5_row1_col6" class="data row1 col6">0694_B_001</td>
+</tr>
+<tr class="odd">
+<td id="T_2bda5_level0_row2" class="row_heading level0 row2" data-quarto-table-cell-role="th">2</td>
+<td id="T_2bda5_row2_col0" class="data row2 col0">0694</td>
+<td id="T_2bda5_row2_col1" class="data row2 col1">B</td>
+<td id="T_2bda5_row2_col2" class="data row2 col2">0.880000</td>
+<td id="T_2bda5_row2_col3" class="data row2 col3">dev</td>
+<td id="T_2bda5_row2_col4" class="data row2 col4">002</td>
+<td id="T_2bda5_row2_col5" class="data row2 col5">audio/dev/0694/B/0694_B_002.wav</td>
+<td id="T_2bda5_row2_col6" class="data row2 col6">0694_B_002</td>
+</tr>
+<tr class="even">
+<td id="T_2bda5_level0_row3" class="row_heading level0 row3" data-quarto-table-cell-role="th">3</td>
+<td id="T_2bda5_row3_col0" class="data row3 col0">0694</td>
+<td id="T_2bda5_row3_col1" class="data row3 col1">B</td>
+<td id="T_2bda5_row3_col2" class="data row3 col2">1.130000</td>
+<td id="T_2bda5_row3_col3" class="data row3 col3">dev</td>
+<td id="T_2bda5_row3_col4" class="data row3 col4">003</td>
+<td id="T_2bda5_row3_col5" class="data row3 col5">audio/dev/0694/B/0694_B_003.wav</td>
+<td id="T_2bda5_row3_col6" class="data row3 col6">0694_B_003</td>
+</tr>
+<tr class="odd">
+<td id="T_2bda5_level0_row4" class="row_heading level0 row4" data-quarto-table-cell-role="th">4</td>
+<td id="T_2bda5_row4_col0" class="data row4 col0">0694</td>
+<td id="T_2bda5_row4_col1" class="data row4 col1">B</td>
+<td id="T_2bda5_row4_col2" class="data row4 col2">1.180000</td>
+<td id="T_2bda5_row4_col3" class="data row4 col3">dev</td>
+<td id="T_2bda5_row4_col4" class="data row4 col4">004</td>
+<td id="T_2bda5_row4_col5" class="data row4 col5">audio/dev/0694/B/0694_B_004.wav</td>
+<td id="T_2bda5_row4_col6" class="data row4 col6">0694_B_004</td>
+</tr>
+</tbody>
 </table>
 </div>
 <div class="cell-output cell-output-display">
-
 <style type="text/css">
 #T_b236e caption {
   font-size: 20px;
 }
 </style>
-<table id="T_b236e">
-  <caption>dev_pairs</caption>
-  <thead>
-    <tr>
-      <th class="blank level0">&nbsp;</th>
-      <th id="T_b236e_level0_col0" class="col_heading level0 col0">baby_id_B</th>
-      <th id="T_b236e_level0_col1" class="col_heading level0 col1">baby_id_D</th>
-      <th id="T_b236e_level0_col2" class="col_heading level0 col2">id</th>
-      <th id="T_b236e_level0_col3" class="col_heading level0 col3">label</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th id="T_b236e_level0_row0" class="row_heading level0 row0">0</th>
-      <td id="T_b236e_row0_col0" class="data row0 col0">0133</td>
-      <td id="T_b236e_row0_col1" class="data row0 col1">0611</td>
-      <td id="T_b236e_row0_col2" class="data row0 col2">0133B_0611D</td>
-      <td id="T_b236e_row0_col3" class="data row0 col3">0</td>
-    </tr>
-    <tr>
-      <th id="T_b236e_level0_row1" class="row_heading level0 row1">1</th>
-      <td id="T_b236e_row1_col0" class="data row1 col0">0593</td>
-      <td id="T_b236e_row1_col1" class="data row1 col1">0584</td>
-      <td id="T_b236e_row1_col2" class="data row1 col2">0593B_0584D</td>
-      <td id="T_b236e_row1_col3" class="data row1 col3">0</td>
-    </tr>
-    <tr>
-      <th id="T_b236e_level0_row2" class="row_heading level0 row2">2</th>
-      <td id="T_b236e_row2_col0" class="data row2 col0">0094</td>
-      <td id="T_b236e_row2_col1" class="data row2 col1">0292</td>
-      <td id="T_b236e_row2_col2" class="data row2 col2">0094B_0292D</td>
-      <td id="T_b236e_row2_col3" class="data row2 col3">0</td>
-    </tr>
-    <tr>
-      <th id="T_b236e_level0_row3" class="row_heading level0 row3">3</th>
-      <td id="T_b236e_row3_col0" class="data row3 col0">0563</td>
-      <td id="T_b236e_row3_col1" class="data row3 col1">0094</td>
-      <td id="T_b236e_row3_col2" class="data row3 col2">0563B_0094D</td>
-      <td id="T_b236e_row3_col3" class="data row3 col3">0</td>
-    </tr>
-    <tr>
-      <th id="T_b236e_level0_row4" class="row_heading level0 row4">4</th>
-      <td id="T_b236e_row4_col0" class="data row4 col0">0122</td>
-      <td id="T_b236e_row4_col1" class="data row4 col1">0694</td>
-      <td id="T_b236e_row4_col2" class="data row4 col2">0122B_0694D</td>
-      <td id="T_b236e_row4_col3" class="data row4 col3">0</td>
-    </tr>
-  </tbody>
+
+<table id="T_b236e" data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>dev_pairs</caption>
+<thead>
+<tr class="header">
+<th class="blank level0" data-quarto-table-cell-role="th">&nbsp;</th>
+<th id="T_b236e_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">baby_id_B</th>
+<th id="T_b236e_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">baby_id_D</th>
+<th id="T_b236e_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">id</th>
+<th id="T_b236e_level0_col3" class="col_heading level0 col3" data-quarto-table-cell-role="th">label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_b236e_level0_row0" class="row_heading level0 row0" data-quarto-table-cell-role="th">0</td>
+<td id="T_b236e_row0_col0" class="data row0 col0">0133</td>
+<td id="T_b236e_row0_col1" class="data row0 col1">0611</td>
+<td id="T_b236e_row0_col2" class="data row0 col2">0133B_0611D</td>
+<td id="T_b236e_row0_col3" class="data row0 col3">0</td>
+</tr>
+<tr class="even">
+<td id="T_b236e_level0_row1" class="row_heading level0 row1" data-quarto-table-cell-role="th">1</td>
+<td id="T_b236e_row1_col0" class="data row1 col0">0593</td>
+<td id="T_b236e_row1_col1" class="data row1 col1">0584</td>
+<td id="T_b236e_row1_col2" class="data row1 col2">0593B_0584D</td>
+<td id="T_b236e_row1_col3" class="data row1 col3">0</td>
+</tr>
+<tr class="odd">
+<td id="T_b236e_level0_row2" class="row_heading level0 row2" data-quarto-table-cell-role="th">2</td>
+<td id="T_b236e_row2_col0" class="data row2 col0">0094</td>
+<td id="T_b236e_row2_col1" class="data row2 col1">0292</td>
+<td id="T_b236e_row2_col2" class="data row2 col2">0094B_0292D</td>
+<td id="T_b236e_row2_col3" class="data row2 col3">0</td>
+</tr>
+<tr class="even">
+<td id="T_b236e_level0_row3" class="row_heading level0 row3" data-quarto-table-cell-role="th">3</td>
+<td id="T_b236e_row3_col0" class="data row3 col0">0563</td>
+<td id="T_b236e_row3_col1" class="data row3 col1">0094</td>
+<td id="T_b236e_row3_col2" class="data row3 col2">0563B_0094D</td>
+<td id="T_b236e_row3_col3" class="data row3 col3">0</td>
+</tr>
+<tr class="odd">
+<td id="T_b236e_level0_row4" class="row_heading level0 row4" data-quarto-table-cell-role="th">4</td>
+<td id="T_b236e_row4_col0" class="data row4 col0">0122</td>
+<td id="T_b236e_row4_col1" class="data row4 col1">0694</td>
+<td id="T_b236e_row4_col2" class="data row4 col2">0122B_0694D</td>
+<td id="T_b236e_row4_col3" class="data row4 col3">0</td>
+</tr>
+</tbody>
 </table>
 </div>
 <div class="cell-output cell-output-display">
-
 <style type="text/css">
 #T_f3d31 caption {
   font-size: 20px;
 }
 </style>
-<table id="T_f3d31">
-  <caption>test_pairs</caption>
-  <thead>
-    <tr>
-      <th class="blank level0">&nbsp;</th>
-      <th id="T_f3d31_level0_col0" class="col_heading level0 col0">baby_id_B</th>
-      <th id="T_f3d31_level0_col1" class="col_heading level0 col1">baby_id_D</th>
-      <th id="T_f3d31_level0_col2" class="col_heading level0 col2">id</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th id="T_f3d31_level0_row0" class="row_heading level0 row0">0</th>
-      <td id="T_f3d31_row0_col0" class="data row0 col0">anonymous027</td>
-      <td id="T_f3d31_row0_col1" class="data row0 col1">anonymous212</td>
-      <td id="T_f3d31_row0_col2" class="data row0 col2">anonymous027B_anonymous212D</td>
-    </tr>
-    <tr>
-      <th id="T_f3d31_level0_row1" class="row_heading level0 row1">1</th>
-      <td id="T_f3d31_row1_col0" class="data row1 col0">anonymous035</td>
-      <td id="T_f3d31_row1_col1" class="data row1 col1">anonymous225</td>
-      <td id="T_f3d31_row1_col2" class="data row1 col2">anonymous035B_anonymous225D</td>
-    </tr>
-    <tr>
-      <th id="T_f3d31_level0_row2" class="row_heading level0 row2">2</th>
-      <td id="T_f3d31_row2_col0" class="data row2 col0">anonymous029</td>
-      <td id="T_f3d31_row2_col1" class="data row2 col1">anonymous288</td>
-      <td id="T_f3d31_row2_col2" class="data row2 col2">anonymous029B_anonymous288D</td>
-    </tr>
-    <tr>
-      <th id="T_f3d31_level0_row3" class="row_heading level0 row3">3</th>
-      <td id="T_f3d31_row3_col0" class="data row3 col0">anonymous001</td>
-      <td id="T_f3d31_row3_col1" class="data row3 col1">anonymous204</td>
-      <td id="T_f3d31_row3_col2" class="data row3 col2">anonymous001B_anonymous204D</td>
-    </tr>
-    <tr>
-      <th id="T_f3d31_level0_row4" class="row_heading level0 row4">4</th>
-      <td id="T_f3d31_row4_col0" class="data row4 col0">anonymous075</td>
-      <td id="T_f3d31_row4_col1" class="data row4 col1">anonymous244</td>
-      <td id="T_f3d31_row4_col2" class="data row4 col2">anonymous075B_anonymous244D</td>
-    </tr>
-  </tbody>
+
+<table id="T_f3d31" data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>test_pairs</caption>
+<thead>
+<tr class="header">
+<th class="blank level0" data-quarto-table-cell-role="th">&nbsp;</th>
+<th id="T_f3d31_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">baby_id_B</th>
+<th id="T_f3d31_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">baby_id_D</th>
+<th id="T_f3d31_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">id</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_f3d31_level0_row0" class="row_heading level0 row0" data-quarto-table-cell-role="th">0</td>
+<td id="T_f3d31_row0_col0" class="data row0 col0">anonymous027</td>
+<td id="T_f3d31_row0_col1" class="data row0 col1">anonymous212</td>
+<td id="T_f3d31_row0_col2" class="data row0 col2">anonymous027B_anonymous212D</td>
+</tr>
+<tr class="even">
+<td id="T_f3d31_level0_row1" class="row_heading level0 row1" data-quarto-table-cell-role="th">1</td>
+<td id="T_f3d31_row1_col0" class="data row1 col0">anonymous035</td>
+<td id="T_f3d31_row1_col1" class="data row1 col1">anonymous225</td>
+<td id="T_f3d31_row1_col2" class="data row1 col2">anonymous035B_anonymous225D</td>
+</tr>
+<tr class="odd">
+<td id="T_f3d31_level0_row2" class="row_heading level0 row2" data-quarto-table-cell-role="th">2</td>
+<td id="T_f3d31_row2_col0" class="data row2 col0">anonymous029</td>
+<td id="T_f3d31_row2_col1" class="data row2 col1">anonymous288</td>
+<td id="T_f3d31_row2_col2" class="data row2 col2">anonymous029B_anonymous288D</td>
+</tr>
+<tr class="even">
+<td id="T_f3d31_level0_row3" class="row_heading level0 row3" data-quarto-table-cell-role="th">3</td>
+<td id="T_f3d31_row3_col0" class="data row3 col0">anonymous001</td>
+<td id="T_f3d31_row3_col1" class="data row3 col1">anonymous204</td>
+<td id="T_f3d31_row3_col2" class="data row3 col2">anonymous001B_anonymous204D</td>
+</tr>
+<tr class="odd">
+<td id="T_f3d31_level0_row4" class="row_heading level0 row4" data-quarto-table-cell-role="th">4</td>
+<td id="T_f3d31_row4_col0" class="data row4 col0">anonymous075</td>
+<td id="T_f3d31_row4_col1" class="data row4 col1">anonymous244</td>
+<td id="T_f3d31_row4_col2" class="data row4 col2">anonymous075B_anonymous244D</td>
+</tr>
+</tbody>
 </table>
 </div>
 <div class="cell-output cell-output-display">
-
 <style type="text/css">
 #T_173e4 caption {
   font-size: 20px;
 }
 </style>
-<table id="T_173e4">
-  <caption>sample_submission</caption>
-  <thead>
-    <tr>
-      <th class="blank level0">&nbsp;</th>
-      <th id="T_173e4_level0_col0" class="col_heading level0 col0">id</th>
-      <th id="T_173e4_level0_col1" class="col_heading level0 col1">score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th id="T_173e4_level0_row0" class="row_heading level0 row0">0</th>
-      <td id="T_173e4_row0_col0" class="data row0 col0">anonymous027B_anonymous212D</td>
-      <td id="T_173e4_row0_col1" class="data row0 col1">0.548814</td>
-    </tr>
-    <tr>
-      <th id="T_173e4_level0_row1" class="row_heading level0 row1">1</th>
-      <td id="T_173e4_row1_col0" class="data row1 col0">anonymous035B_anonymous225D</td>
-      <td id="T_173e4_row1_col1" class="data row1 col1">0.715189</td>
-    </tr>
-    <tr>
-      <th id="T_173e4_level0_row2" class="row_heading level0 row2">2</th>
-      <td id="T_173e4_row2_col0" class="data row2 col0">anonymous029B_anonymous288D</td>
-      <td id="T_173e4_row2_col1" class="data row2 col1">0.602763</td>
-    </tr>
-    <tr>
-      <th id="T_173e4_level0_row3" class="row_heading level0 row3">3</th>
-      <td id="T_173e4_row3_col0" class="data row3 col0">anonymous001B_anonymous204D</td>
-      <td id="T_173e4_row3_col1" class="data row3 col1">0.544883</td>
-    </tr>
-    <tr>
-      <th id="T_173e4_level0_row4" class="row_heading level0 row4">4</th>
-      <td id="T_173e4_row4_col0" class="data row4 col0">anonymous075B_anonymous244D</td>
-      <td id="T_173e4_row4_col1" class="data row4 col1">0.423655</td>
-    </tr>
-  </tbody>
+
+<table id="T_173e4" data-quarto-postprocess="true" class="table table-sm table-striped small">
+<caption>sample_submission</caption>
+<thead>
+<tr class="header">
+<th class="blank level0" data-quarto-table-cell-role="th">&nbsp;</th>
+<th id="T_173e4_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">id</th>
+<th id="T_173e4_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_173e4_level0_row0" class="row_heading level0 row0" data-quarto-table-cell-role="th">0</td>
+<td id="T_173e4_row0_col0" class="data row0 col0">anonymous027B_anonymous212D</td>
+<td id="T_173e4_row0_col1" class="data row0 col1">0.548814</td>
+</tr>
+<tr class="even">
+<td id="T_173e4_level0_row1" class="row_heading level0 row1" data-quarto-table-cell-role="th">1</td>
+<td id="T_173e4_row1_col0" class="data row1 col0">anonymous035B_anonymous225D</td>
+<td id="T_173e4_row1_col1" class="data row1 col1">0.715189</td>
+</tr>
+<tr class="odd">
+<td id="T_173e4_level0_row2" class="row_heading level0 row2" data-quarto-table-cell-role="th">2</td>
+<td id="T_173e4_row2_col0" class="data row2 col0">anonymous029B_anonymous288D</td>
+<td id="T_173e4_row2_col1" class="data row2 col1">0.602763</td>
+</tr>
+<tr class="even">
+<td id="T_173e4_level0_row3" class="row_heading level0 row3" data-quarto-table-cell-role="th">3</td>
+<td id="T_173e4_row3_col0" class="data row3 col0">anonymous001B_anonymous204D</td>
+<td id="T_173e4_row3_col1" class="data row3 col1">0.544883</td>
+</tr>
+<tr class="odd">
+<td id="T_173e4_level0_row4" class="row_heading level0 row4" data-quarto-table-cell-role="th">4</td>
+<td id="T_173e4_row4_col0" class="data row4 col0">anonymous075B_anonymous244D</td>
+<td id="T_173e4_row4_col1" class="data row4 col1">0.423655</td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
@@ -721,7 +697,7 @@ Syncing run <strong><a href="https://wandb.ai/dhoa/uncategorized/runs/s4lz49ck" 
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>get_eer(embedding_model, cry_dict, dev_pairs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <script type="application/vnd.jupyter.widget-view+json">
-[{"model_id":"19333495d0a4489e90f98c882bd39be3","version_major":2,"version_minor":0}]
+{"model_id":"19333495d0a4489e90f98c882bd39be3","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
 </script>
 </div>
 <div class="cell-output cell-output-stderr">
@@ -1075,1069 +1051,1068 @@ WandbCallback was not able to prepare a DataLoader for logging prediction sample
 </style>
 </div>
 <div class="cell-output cell-output-display">
-
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>eer_metric</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>12.819111</td>
-      <td>9.852398</td>
-      <td>0.397115</td>
-      <td>00:21</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>11.732524</td>
-      <td>9.378596</td>
-      <td>0.369231</td>
-      <td>00:20</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>10.952858</td>
-      <td>6.739351</td>
-      <td>0.375000</td>
-      <td>00:19</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>10.304280</td>
-      <td>8.235709</td>
-      <td>0.350000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>9.576555</td>
-      <td>6.657913</td>
-      <td>0.375000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>8.874806</td>
-      <td>7.752380</td>
-      <td>0.350962</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>8.028608</td>
-      <td>4.957489</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>7.302641</td>
-      <td>5.177752</td>
-      <td>0.301923</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>6.496997</td>
-      <td>4.656638</td>
-      <td>0.350000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>5.806657</td>
-      <td>5.101495</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>4.984231</td>
-      <td>2.045478</td>
-      <td>0.350000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>4.510298</td>
-      <td>1.314584</td>
-      <td>0.327244</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>3.988340</td>
-      <td>0.315158</td>
-      <td>0.326603</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>3.477479</td>
-      <td>5.352105</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>3.133040</td>
-      <td>0.237394</td>
-      <td>0.320833</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>2.831013</td>
-      <td>1.140466</td>
-      <td>0.350000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>2.446104</td>
-      <td>0.798410</td>
-      <td>0.352244</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>2.167508</td>
-      <td>0.486705</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>2.059879</td>
-      <td>1.214511</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>1.854602</td>
-      <td>2.260158</td>
-      <td>0.350000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>1.853107</td>
-      <td>0.357835</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>1.740630</td>
-      <td>1.374100</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>1.724865</td>
-      <td>0.170533</td>
-      <td>0.325000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>1.595109</td>
-      <td>0.166785</td>
-      <td>0.297756</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>1.476745</td>
-      <td>0.489945</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>1.364003</td>
-      <td>0.830093</td>
-      <td>0.347436</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>1.368073</td>
-      <td>0.172278</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>1.400348</td>
-      <td>0.264813</td>
-      <td>0.350000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>1.357518</td>
-      <td>0.213733</td>
-      <td>0.354487</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>1.350938</td>
-      <td>0.121906</td>
-      <td>0.306090</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>30</td>
-      <td>1.298094</td>
-      <td>0.797013</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>31</td>
-      <td>1.163949</td>
-      <td>0.125197</td>
-      <td>0.325000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>32</td>
-      <td>0.992551</td>
-      <td>0.494040</td>
-      <td>0.303846</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>33</td>
-      <td>0.929511</td>
-      <td>0.315667</td>
-      <td>0.350000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>34</td>
-      <td>0.970226</td>
-      <td>0.303382</td>
-      <td>0.326603</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>35</td>
-      <td>1.001400</td>
-      <td>0.403191</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>36</td>
-      <td>1.044940</td>
-      <td>0.573968</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>37</td>
-      <td>0.906172</td>
-      <td>0.145333</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>38</td>
-      <td>0.842299</td>
-      <td>0.281313</td>
-      <td>0.304167</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>39</td>
-      <td>0.871641</td>
-      <td>0.217045</td>
-      <td>0.350000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>40</td>
-      <td>0.777124</td>
-      <td>0.131117</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>41</td>
-      <td>0.705075</td>
-      <td>0.207996</td>
-      <td>0.276282</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>42</td>
-      <td>0.711332</td>
-      <td>0.606886</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>43</td>
-      <td>0.756493</td>
-      <td>0.504772</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>44</td>
-      <td>0.703369</td>
-      <td>0.255737</td>
-      <td>0.325000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>45</td>
-      <td>0.670267</td>
-      <td>1.306089</td>
-      <td>0.276282</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>46</td>
-      <td>0.645874</td>
-      <td>0.156841</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>47</td>
-      <td>0.648763</td>
-      <td>0.117524</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>48</td>
-      <td>0.561911</td>
-      <td>0.229732</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>49</td>
-      <td>0.529512</td>
-      <td>0.191458</td>
-      <td>0.295192</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>50</td>
-      <td>0.462782</td>
-      <td>0.167080</td>
-      <td>0.277244</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>51</td>
-      <td>0.496077</td>
-      <td>0.106041</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>52</td>
-      <td>0.501537</td>
-      <td>0.292876</td>
-      <td>0.277244</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>53</td>
-      <td>0.470838</td>
-      <td>0.200016</td>
-      <td>0.306090</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>54</td>
-      <td>0.492161</td>
-      <td>0.140463</td>
-      <td>0.256090</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>55</td>
-      <td>0.490079</td>
-      <td>0.254963</td>
-      <td>0.256090</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>56</td>
-      <td>0.452705</td>
-      <td>0.186381</td>
-      <td>0.277885</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>57</td>
-      <td>0.422567</td>
-      <td>0.180647</td>
-      <td>0.274359</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>58</td>
-      <td>0.458263</td>
-      <td>0.916696</td>
-      <td>0.272756</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>59</td>
-      <td>0.445988</td>
-      <td>0.176482</td>
-      <td>0.250000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>60</td>
-      <td>0.449376</td>
-      <td>0.134938</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>61</td>
-      <td>0.398278</td>
-      <td>0.454310</td>
-      <td>0.274359</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>62</td>
-      <td>0.378900</td>
-      <td>0.136589</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>63</td>
-      <td>0.397175</td>
-      <td>0.266560</td>
-      <td>0.346795</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>64</td>
-      <td>0.419594</td>
-      <td>0.166931</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>65</td>
-      <td>0.408431</td>
-      <td>0.162984</td>
-      <td>0.322436</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>66</td>
-      <td>0.429785</td>
-      <td>0.227120</td>
-      <td>0.344872</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>67</td>
-      <td>0.380197</td>
-      <td>0.282507</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>68</td>
-      <td>0.361336</td>
-      <td>0.403791</td>
-      <td>0.299359</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>69</td>
-      <td>0.348556</td>
-      <td>0.501471</td>
-      <td>0.277244</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>70</td>
-      <td>0.360931</td>
-      <td>0.358086</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>71</td>
-      <td>0.336917</td>
-      <td>0.388072</td>
-      <td>0.350000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>72</td>
-      <td>0.335198</td>
-      <td>0.326303</td>
-      <td>0.275000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>73</td>
-      <td>0.318928</td>
-      <td>0.230708</td>
-      <td>0.350000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>74</td>
-      <td>0.337089</td>
-      <td>0.224751</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>75</td>
-      <td>0.347762</td>
-      <td>0.228684</td>
-      <td>0.295192</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>76</td>
-      <td>0.347869</td>
-      <td>0.283976</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>77</td>
-      <td>0.328355</td>
-      <td>0.148460</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>78</td>
-      <td>0.301195</td>
-      <td>0.314673</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>79</td>
-      <td>0.309706</td>
-      <td>0.219821</td>
-      <td>0.330769</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>80</td>
-      <td>0.313028</td>
-      <td>0.351390</td>
-      <td>0.375000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>81</td>
-      <td>0.311351</td>
-      <td>0.203537</td>
-      <td>0.374038</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>82</td>
-      <td>0.278428</td>
-      <td>0.227288</td>
-      <td>0.326603</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>83</td>
-      <td>0.300168</td>
-      <td>0.120307</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>84</td>
-      <td>0.291518</td>
-      <td>0.273817</td>
-      <td>0.305128</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>85</td>
-      <td>0.286973</td>
-      <td>0.276371</td>
-      <td>0.324679</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>86</td>
-      <td>0.292313</td>
-      <td>0.201308</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>87</td>
-      <td>0.286953</td>
-      <td>0.333281</td>
-      <td>0.279167</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>88</td>
-      <td>0.278925</td>
-      <td>0.292981</td>
-      <td>0.321154</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>89</td>
-      <td>0.254643</td>
-      <td>0.312703</td>
-      <td>0.254487</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>90</td>
-      <td>0.256090</td>
-      <td>0.102150</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>91</td>
-      <td>0.256988</td>
-      <td>0.243337</td>
-      <td>0.250000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>92</td>
-      <td>0.247612</td>
-      <td>1.446797</td>
-      <td>0.250000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>93</td>
-      <td>0.240916</td>
-      <td>0.104841</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>94</td>
-      <td>0.239867</td>
-      <td>0.203033</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>95</td>
-      <td>0.250558</td>
-      <td>0.213792</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>96</td>
-      <td>0.225012</td>
-      <td>0.146971</td>
-      <td>0.325000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>97</td>
-      <td>0.250202</td>
-      <td>0.144672</td>
-      <td>0.322436</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>98</td>
-      <td>0.252809</td>
-      <td>0.223730</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>99</td>
-      <td>0.247364</td>
-      <td>0.127707</td>
-      <td>0.303846</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>100</td>
-      <td>0.236257</td>
-      <td>0.200906</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>101</td>
-      <td>0.215899</td>
-      <td>0.222088</td>
-      <td>0.275000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>102</td>
-      <td>0.211499</td>
-      <td>0.264478</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>103</td>
-      <td>0.220157</td>
-      <td>0.327042</td>
-      <td>0.278846</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>104</td>
-      <td>0.217344</td>
-      <td>0.180306</td>
-      <td>0.251282</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>105</td>
-      <td>0.211273</td>
-      <td>0.191087</td>
-      <td>0.325000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>106</td>
-      <td>0.225987</td>
-      <td>0.226452</td>
-      <td>0.324679</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>107</td>
-      <td>0.234045</td>
-      <td>0.162532</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>108</td>
-      <td>0.216443</td>
-      <td>0.187482</td>
-      <td>0.275000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>109</td>
-      <td>0.211505</td>
-      <td>0.156684</td>
-      <td>0.276603</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>110</td>
-      <td>0.210457</td>
-      <td>0.178876</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>111</td>
-      <td>0.203583</td>
-      <td>0.097995</td>
-      <td>0.280128</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>112</td>
-      <td>0.200213</td>
-      <td>0.150823</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>113</td>
-      <td>0.205306</td>
-      <td>0.091030</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>114</td>
-      <td>0.195609</td>
-      <td>0.419262</td>
-      <td>0.253205</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>115</td>
-      <td>0.184044</td>
-      <td>0.157910</td>
-      <td>0.269231</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>116</td>
-      <td>0.182212</td>
-      <td>0.235523</td>
-      <td>0.275000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>117</td>
-      <td>0.177163</td>
-      <td>0.177653</td>
-      <td>0.275000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>118</td>
-      <td>0.181401</td>
-      <td>0.236190</td>
-      <td>0.269551</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>119</td>
-      <td>0.175148</td>
-      <td>0.269990</td>
-      <td>0.269231</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>120</td>
-      <td>0.176068</td>
-      <td>0.224078</td>
-      <td>0.319872</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>121</td>
-      <td>0.185972</td>
-      <td>0.157348</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>122</td>
-      <td>0.174520</td>
-      <td>0.167444</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>123</td>
-      <td>0.177205</td>
-      <td>0.214876</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>124</td>
-      <td>0.166557</td>
-      <td>0.090736</td>
-      <td>0.297756</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>125</td>
-      <td>0.167413</td>
-      <td>0.265629</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>126</td>
-      <td>0.164617</td>
-      <td>0.261985</td>
-      <td>0.325000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>127</td>
-      <td>0.167717</td>
-      <td>0.223148</td>
-      <td>0.256090</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>128</td>
-      <td>0.160176</td>
-      <td>0.159316</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>129</td>
-      <td>0.155260</td>
-      <td>0.159374</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>130</td>
-      <td>0.154295</td>
-      <td>0.176301</td>
-      <td>0.272115</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>131</td>
-      <td>0.149302</td>
-      <td>0.210373</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>132</td>
-      <td>0.156900</td>
-      <td>0.168842</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>133</td>
-      <td>0.150621</td>
-      <td>0.171651</td>
-      <td>0.274038</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>134</td>
-      <td>0.150258</td>
-      <td>0.184598</td>
-      <td>0.278526</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>135</td>
-      <td>0.152160</td>
-      <td>0.148298</td>
-      <td>0.325000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>136</td>
-      <td>0.150087</td>
-      <td>0.219485</td>
-      <td>0.274038</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>137</td>
-      <td>0.147386</td>
-      <td>0.202868</td>
-      <td>0.302244</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>138</td>
-      <td>0.147530</td>
-      <td>0.129326</td>
-      <td>0.273077</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>139</td>
-      <td>0.145539</td>
-      <td>0.096450</td>
-      <td>0.296474</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>140</td>
-      <td>0.145980</td>
-      <td>0.111623</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>141</td>
-      <td>0.145903</td>
-      <td>0.138313</td>
-      <td>0.300000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>142</td>
-      <td>0.150013</td>
-      <td>0.089761</td>
-      <td>0.275000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>143</td>
-      <td>0.154749</td>
-      <td>0.164044</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>144</td>
-      <td>0.149258</td>
-      <td>0.143600</td>
-      <td>0.280449</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>145</td>
-      <td>0.145224</td>
-      <td>0.149808</td>
-      <td>0.300000</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>146</td>
-      <td>0.140290</td>
-      <td>0.104018</td>
-      <td>0.277885</td>
-      <td>00:18</td>
-    </tr>
-    <tr>
-      <td>147</td>
-      <td>0.142366</td>
-      <td>0.178131</td>
-      <td>0.293910</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>148</td>
-      <td>0.149232</td>
-      <td>0.173077</td>
-      <td>0.275000</td>
-      <td>00:17</td>
-    </tr>
-    <tr>
-      <td>149</td>
-      <td>0.145681</td>
-      <td>0.137975</td>
-      <td>0.297115</td>
-      <td>00:17</td>
-    </tr>
-  </tbody>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">epoch</th>
+<th data-quarto-table-cell-role="th">train_loss</th>
+<th data-quarto-table-cell-role="th">valid_loss</th>
+<th data-quarto-table-cell-role="th">eer_metric</th>
+<th data-quarto-table-cell-role="th">time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>12.819111</td>
+<td>9.852398</td>
+<td>0.397115</td>
+<td>00:21</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>11.732524</td>
+<td>9.378596</td>
+<td>0.369231</td>
+<td>00:20</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>10.952858</td>
+<td>6.739351</td>
+<td>0.375000</td>
+<td>00:19</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>10.304280</td>
+<td>8.235709</td>
+<td>0.350000</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>9.576555</td>
+<td>6.657913</td>
+<td>0.375000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>8.874806</td>
+<td>7.752380</td>
+<td>0.350962</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>8.028608</td>
+<td>4.957489</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>7.302641</td>
+<td>5.177752</td>
+<td>0.301923</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>6.496997</td>
+<td>4.656638</td>
+<td>0.350000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>5.806657</td>
+<td>5.101495</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>4.984231</td>
+<td>2.045478</td>
+<td>0.350000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>4.510298</td>
+<td>1.314584</td>
+<td>0.327244</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>3.988340</td>
+<td>0.315158</td>
+<td>0.326603</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>3.477479</td>
+<td>5.352105</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td>3.133040</td>
+<td>0.237394</td>
+<td>0.320833</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>2.831013</td>
+<td>1.140466</td>
+<td>0.350000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>2.446104</td>
+<td>0.798410</td>
+<td>0.352244</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>17</td>
+<td>2.167508</td>
+<td>0.486705</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>18</td>
+<td>2.059879</td>
+<td>1.214511</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td>1.854602</td>
+<td>2.260158</td>
+<td>0.350000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>1.853107</td>
+<td>0.357835</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>21</td>
+<td>1.740630</td>
+<td>1.374100</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>22</td>
+<td>1.724865</td>
+<td>0.170533</td>
+<td>0.325000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>23</td>
+<td>1.595109</td>
+<td>0.166785</td>
+<td>0.297756</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>24</td>
+<td>1.476745</td>
+<td>0.489945</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>1.364003</td>
+<td>0.830093</td>
+<td>0.347436</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>26</td>
+<td>1.368073</td>
+<td>0.172278</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>27</td>
+<td>1.400348</td>
+<td>0.264813</td>
+<td>0.350000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>28</td>
+<td>1.357518</td>
+<td>0.213733</td>
+<td>0.354487</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>29</td>
+<td>1.350938</td>
+<td>0.121906</td>
+<td>0.306090</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>30</td>
+<td>1.298094</td>
+<td>0.797013</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>31</td>
+<td>1.163949</td>
+<td>0.125197</td>
+<td>0.325000</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>32</td>
+<td>0.992551</td>
+<td>0.494040</td>
+<td>0.303846</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>33</td>
+<td>0.929511</td>
+<td>0.315667</td>
+<td>0.350000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>34</td>
+<td>0.970226</td>
+<td>0.303382</td>
+<td>0.326603</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>35</td>
+<td>1.001400</td>
+<td>0.403191</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>36</td>
+<td>1.044940</td>
+<td>0.573968</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>37</td>
+<td>0.906172</td>
+<td>0.145333</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>38</td>
+<td>0.842299</td>
+<td>0.281313</td>
+<td>0.304167</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>39</td>
+<td>0.871641</td>
+<td>0.217045</td>
+<td>0.350000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>0.777124</td>
+<td>0.131117</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>41</td>
+<td>0.705075</td>
+<td>0.207996</td>
+<td>0.276282</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td>0.711332</td>
+<td>0.606886</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>43</td>
+<td>0.756493</td>
+<td>0.504772</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>44</td>
+<td>0.703369</td>
+<td>0.255737</td>
+<td>0.325000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>45</td>
+<td>0.670267</td>
+<td>1.306089</td>
+<td>0.276282</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>46</td>
+<td>0.645874</td>
+<td>0.156841</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>47</td>
+<td>0.648763</td>
+<td>0.117524</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>48</td>
+<td>0.561911</td>
+<td>0.229732</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>49</td>
+<td>0.529512</td>
+<td>0.191458</td>
+<td>0.295192</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>0.462782</td>
+<td>0.167080</td>
+<td>0.277244</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>51</td>
+<td>0.496077</td>
+<td>0.106041</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>52</td>
+<td>0.501537</td>
+<td>0.292876</td>
+<td>0.277244</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>53</td>
+<td>0.470838</td>
+<td>0.200016</td>
+<td>0.306090</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>54</td>
+<td>0.492161</td>
+<td>0.140463</td>
+<td>0.256090</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>55</td>
+<td>0.490079</td>
+<td>0.254963</td>
+<td>0.256090</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>56</td>
+<td>0.452705</td>
+<td>0.186381</td>
+<td>0.277885</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>57</td>
+<td>0.422567</td>
+<td>0.180647</td>
+<td>0.274359</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>58</td>
+<td>0.458263</td>
+<td>0.916696</td>
+<td>0.272756</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>59</td>
+<td>0.445988</td>
+<td>0.176482</td>
+<td>0.250000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>60</td>
+<td>0.449376</td>
+<td>0.134938</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>61</td>
+<td>0.398278</td>
+<td>0.454310</td>
+<td>0.274359</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>62</td>
+<td>0.378900</td>
+<td>0.136589</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>63</td>
+<td>0.397175</td>
+<td>0.266560</td>
+<td>0.346795</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>64</td>
+<td>0.419594</td>
+<td>0.166931</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>65</td>
+<td>0.408431</td>
+<td>0.162984</td>
+<td>0.322436</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>66</td>
+<td>0.429785</td>
+<td>0.227120</td>
+<td>0.344872</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>67</td>
+<td>0.380197</td>
+<td>0.282507</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>68</td>
+<td>0.361336</td>
+<td>0.403791</td>
+<td>0.299359</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>69</td>
+<td>0.348556</td>
+<td>0.501471</td>
+<td>0.277244</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>70</td>
+<td>0.360931</td>
+<td>0.358086</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>71</td>
+<td>0.336917</td>
+<td>0.388072</td>
+<td>0.350000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>72</td>
+<td>0.335198</td>
+<td>0.326303</td>
+<td>0.275000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>73</td>
+<td>0.318928</td>
+<td>0.230708</td>
+<td>0.350000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>74</td>
+<td>0.337089</td>
+<td>0.224751</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>75</td>
+<td>0.347762</td>
+<td>0.228684</td>
+<td>0.295192</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>76</td>
+<td>0.347869</td>
+<td>0.283976</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>77</td>
+<td>0.328355</td>
+<td>0.148460</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>78</td>
+<td>0.301195</td>
+<td>0.314673</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>79</td>
+<td>0.309706</td>
+<td>0.219821</td>
+<td>0.330769</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>80</td>
+<td>0.313028</td>
+<td>0.351390</td>
+<td>0.375000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>81</td>
+<td>0.311351</td>
+<td>0.203537</td>
+<td>0.374038</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>82</td>
+<td>0.278428</td>
+<td>0.227288</td>
+<td>0.326603</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>83</td>
+<td>0.300168</td>
+<td>0.120307</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>84</td>
+<td>0.291518</td>
+<td>0.273817</td>
+<td>0.305128</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>85</td>
+<td>0.286973</td>
+<td>0.276371</td>
+<td>0.324679</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>86</td>
+<td>0.292313</td>
+<td>0.201308</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>87</td>
+<td>0.286953</td>
+<td>0.333281</td>
+<td>0.279167</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>88</td>
+<td>0.278925</td>
+<td>0.292981</td>
+<td>0.321154</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>89</td>
+<td>0.254643</td>
+<td>0.312703</td>
+<td>0.254487</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>90</td>
+<td>0.256090</td>
+<td>0.102150</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>91</td>
+<td>0.256988</td>
+<td>0.243337</td>
+<td>0.250000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>92</td>
+<td>0.247612</td>
+<td>1.446797</td>
+<td>0.250000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>93</td>
+<td>0.240916</td>
+<td>0.104841</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>94</td>
+<td>0.239867</td>
+<td>0.203033</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>95</td>
+<td>0.250558</td>
+<td>0.213792</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>96</td>
+<td>0.225012</td>
+<td>0.146971</td>
+<td>0.325000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>97</td>
+<td>0.250202</td>
+<td>0.144672</td>
+<td>0.322436</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>98</td>
+<td>0.252809</td>
+<td>0.223730</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>99</td>
+<td>0.247364</td>
+<td>0.127707</td>
+<td>0.303846</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>100</td>
+<td>0.236257</td>
+<td>0.200906</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>101</td>
+<td>0.215899</td>
+<td>0.222088</td>
+<td>0.275000</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>102</td>
+<td>0.211499</td>
+<td>0.264478</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>103</td>
+<td>0.220157</td>
+<td>0.327042</td>
+<td>0.278846</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>104</td>
+<td>0.217344</td>
+<td>0.180306</td>
+<td>0.251282</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>105</td>
+<td>0.211273</td>
+<td>0.191087</td>
+<td>0.325000</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>106</td>
+<td>0.225987</td>
+<td>0.226452</td>
+<td>0.324679</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>107</td>
+<td>0.234045</td>
+<td>0.162532</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>108</td>
+<td>0.216443</td>
+<td>0.187482</td>
+<td>0.275000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>109</td>
+<td>0.211505</td>
+<td>0.156684</td>
+<td>0.276603</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>110</td>
+<td>0.210457</td>
+<td>0.178876</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>111</td>
+<td>0.203583</td>
+<td>0.097995</td>
+<td>0.280128</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>112</td>
+<td>0.200213</td>
+<td>0.150823</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>113</td>
+<td>0.205306</td>
+<td>0.091030</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>114</td>
+<td>0.195609</td>
+<td>0.419262</td>
+<td>0.253205</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>115</td>
+<td>0.184044</td>
+<td>0.157910</td>
+<td>0.269231</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>116</td>
+<td>0.182212</td>
+<td>0.235523</td>
+<td>0.275000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>117</td>
+<td>0.177163</td>
+<td>0.177653</td>
+<td>0.275000</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>118</td>
+<td>0.181401</td>
+<td>0.236190</td>
+<td>0.269551</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>119</td>
+<td>0.175148</td>
+<td>0.269990</td>
+<td>0.269231</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>120</td>
+<td>0.176068</td>
+<td>0.224078</td>
+<td>0.319872</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>121</td>
+<td>0.185972</td>
+<td>0.157348</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>122</td>
+<td>0.174520</td>
+<td>0.167444</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>123</td>
+<td>0.177205</td>
+<td>0.214876</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>124</td>
+<td>0.166557</td>
+<td>0.090736</td>
+<td>0.297756</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>125</td>
+<td>0.167413</td>
+<td>0.265629</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>126</td>
+<td>0.164617</td>
+<td>0.261985</td>
+<td>0.325000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>127</td>
+<td>0.167717</td>
+<td>0.223148</td>
+<td>0.256090</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>128</td>
+<td>0.160176</td>
+<td>0.159316</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>129</td>
+<td>0.155260</td>
+<td>0.159374</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>130</td>
+<td>0.154295</td>
+<td>0.176301</td>
+<td>0.272115</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>131</td>
+<td>0.149302</td>
+<td>0.210373</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>132</td>
+<td>0.156900</td>
+<td>0.168842</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>133</td>
+<td>0.150621</td>
+<td>0.171651</td>
+<td>0.274038</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>134</td>
+<td>0.150258</td>
+<td>0.184598</td>
+<td>0.278526</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>135</td>
+<td>0.152160</td>
+<td>0.148298</td>
+<td>0.325000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>136</td>
+<td>0.150087</td>
+<td>0.219485</td>
+<td>0.274038</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>137</td>
+<td>0.147386</td>
+<td>0.202868</td>
+<td>0.302244</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>138</td>
+<td>0.147530</td>
+<td>0.129326</td>
+<td>0.273077</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>139</td>
+<td>0.145539</td>
+<td>0.096450</td>
+<td>0.296474</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>140</td>
+<td>0.145980</td>
+<td>0.111623</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>141</td>
+<td>0.145903</td>
+<td>0.138313</td>
+<td>0.300000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>142</td>
+<td>0.150013</td>
+<td>0.089761</td>
+<td>0.275000</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>143</td>
+<td>0.154749</td>
+<td>0.164044</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>144</td>
+<td>0.149258</td>
+<td>0.143600</td>
+<td>0.280449</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>145</td>
+<td>0.145224</td>
+<td>0.149808</td>
+<td>0.300000</td>
+<td>00:18</td>
+</tr>
+<tr class="odd">
+<td>146</td>
+<td>0.140290</td>
+<td>0.104018</td>
+<td>0.277885</td>
+<td>00:18</td>
+</tr>
+<tr class="even">
+<td>147</td>
+<td>0.142366</td>
+<td>0.178131</td>
+<td>0.293910</td>
+<td>00:17</td>
+</tr>
+<tr class="odd">
+<td>148</td>
+<td>0.149232</td>
+<td>0.173077</td>
+<td>0.275000</td>
+<td>00:17</td>
+</tr>
+<tr class="even">
+<td>149</td>
+<td>0.145681</td>
+<td>0.137975</td>
+<td>0.297115</td>
+<td>00:17</td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
@@ -2168,7 +2143,7 @@ WandbCallback was not able to prepare a DataLoader for logging prediction sample
 <span id="cb60-21"><a href="#cb60-21" aria-hidden="true" tabindex="-1"></a>test_pairs[<span class="st">'score'</span>] <span class="op">=</span> test_pairs.<span class="bu">apply</span>(<span class="kw">lambda</span> row: compute_cosine_similarity_score(row<span class="op">=</span>row, cry_dict<span class="op">=</span>cry_dict_test), axis<span class="op">=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <script type="application/vnd.jupyter.widget-view+json">
-[{"model_id":"077d0aa9c01742829be45f41d1357c02","version_major":2,"version_minor":0}]
+{"model_id":"077d0aa9c01742829be45f41d1357c02","version_major":2,"version_minor":0,"quarto_mimetype":"application/vnd.jupyter.widget-view+json"}
 </script>
 </div>
 </div>
@@ -2178,45 +2153,46 @@ WandbCallback was not able to prepare a DataLoader for logging prediction sample
 <span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>my_submission.to_csv(<span class="st">'my_submission.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>display(my_submission.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-
 <div>
 
-<table class="dataframe table table-sm table-striped">
-  <thead>
-    <tr>
-      <th></th>
-      <th>id</th>
-      <th>score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>anonymous027B_anonymous212D</td>
-      <td>-0.120739</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>anonymous035B_anonymous225D</td>
-      <td>-0.063723</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>anonymous029B_anonymous288D</td>
-      <td>0.026014</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>anonymous001B_anonymous204D</td>
-      <td>-0.170518</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>anonymous075B_anonymous244D</td>
-      <td>0.125677</td>
-    </tr>
-  </tbody>
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">id</th>
+<th data-quarto-table-cell-role="th">score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>anonymous027B_anonymous212D</td>
+<td>-0.120739</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>anonymous035B_anonymous225D</td>
+<td>-0.063723</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>anonymous029B_anonymous288D</td>
+<td>0.026014</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>anonymous001B_anonymous204D</td>
+<td>-0.170518</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>anonymous075B_anonymous244D</td>
+<td>0.125677</td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -2252,9 +2228,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -2266,7 +2256,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -2302,24 +2309,128 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

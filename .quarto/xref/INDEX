@@ -35,5 +35,11 @@
   },
   "posts/cryceleb.ipynb": {
     "cryceleb.html": "8c886ce4"
+  },
+  "posts/finetune_clip_coco-exp.ipynb": {
+    "finetune_clip_coco-exp.html": "3a36de22"
+  },
+  "posts/finetune_clip.ipynb": {
+    "finetune_clip.html": "da83e12a"
   }
 }
