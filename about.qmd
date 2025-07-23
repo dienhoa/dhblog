@@ -5,8 +5,8 @@ about:
   template: jolla
   links:
     - icon: twitter
-      text: Twitter
-      href: https://twitter.com/DienhoaT
+      text: X
+      href: https://x.com/DienhoaT
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/dien-hoa-truong-74449aa4/
@@ -20,8 +20,12 @@ about:
 
 ---
 
-Hello, I'm Dien-Hoa Truong, Data Scientist, vietnamese currently living in the french riviera. I love programming, and math and am a big fan of fast.ai. Here is where I share all the knowledge I discover along my AI journey
+Hello, I'm Dien-Hoa Truong, a freelancer Data Scientist currently located in Quebec, Canada. I'm experienced in several domains in Data Science, especially computer vision and audio but not limited. I love programming, and math and am a big fan of fast.ai. Here is where I share all the knowledge I discover along my AI journey.
+
+Contact me at dienhoa.t@gmail.com if you want to hire me.
 
 Some achievements:
 - fast.ai [regular member](https://forums.fast.ai/u/dhoa/summary)
 - winner of [community Kaggle competition](https://www.kaggle.com/competitions/kaggle-pog-series-s01e02)
+- winner of [CryCeleb 2023 HuggingFace competition](https://arxiv.org/pdf/2305.00969) on infant cry speaker verification
+- built world-class [generative image and deepfake detection](https://sightengine.com/detect-ai-generated-images) for Sightengine
