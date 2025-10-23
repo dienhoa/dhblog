@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/learn_fasthtml.html",
       "/posts/finetune_clip.html",
       "/posts/cryceleb.html",
       "/posts/tst_from_scratch.html",

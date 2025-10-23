@@ -22,7 +22,7 @@ about:
 
 Hello, I'm Dien-Hoa Truong, a freelancer Data Scientist currently located in Quebec, Canada. I'm experienced in several domains in Data Science, especially computer vision and audio but not limited. I love programming, and math and am a big fan of fast.ai. Here is where I share all the knowledge I discover along my AI journey.
 
-Contact me at dienhoa.t@gmail.com if you want to hire me.
+Contact me at dienhoa.t@gmail.com 
 
 Some achievements:
 - fast.ai [regular member](https://forums.fast.ai/u/dhoa/summary)
